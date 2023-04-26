@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Lai = 6.9 * 100;
+        let money = prompt('Nhập sô tiền muốn gữi ');
+        let year = prompt('Nhập số năm muốn gửi ');
+        let tienLai= money * Lai;
+        let moneyYear = tienLai * year;
+        let total = money + moneyYear;
+        
+        document.write(
+            ` <h3>Tiền lãi ngân hàng </h3>
+            ${moneyYear}
+            <p>Số tiền bạn muốn gửi là : ${money} </p>
+            <p>Số năm bạn muốn gửi là : ${year} </p>
+            <p>Tiền lãi sau 1 năm của bạn là : ${tienLai} </p>
+            <p>Tông tiền lãi bạn nhận được sau ${year} năm là : ${total} </p>
+
+            `
+        )
+    </script>
+</body>
+</html>
