@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" id="nameFruit"> <button id="result">Xem Giá</button>
+    <p> <span id="show"></span>
+    </p>
+  
+</body>
+<script >
+    let fruitName = document.getElementById("nameFruit");
+let showPrice = document.getElementById("result");
+let showResult = document.getElementById("show");
+
+showPrice.addEventListener("click", function () {
+  let nameFruit = fruitName.value;
+
+  switch (nameFruit) {
+    case "Ổi":
+    case "Dưa Hấu":
+      showResult.innerHTML = `Giá của ${nameFruit} là 20.000 VNĐ/Kg`;
+      break;
+    case "Xoài ":
+      showResult.innerHTML = `Giá của ${nameFruit} là 30.000 VNĐ/Kg`;
+      break;
+    case "Cam":
+    case "Chôm Chôm":
+      showResult.innerHTML = `Giá của ${nameFruit} là 40.000 VNĐ/Kg`;
+      break;
+    case "Măng cụt":
+        showResult.innerHTML=`Giá của ${nameFruit} là 50.000 VNĐ/Kg`
+        break
+    default:
+        showResult.innerHTML=`Không có sản phẩm là : ${nameFruit} `
+        break
+  }
+});
+</script>
+</html>
