@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let duongLich = parseInt(prompt('Nhập năm dương lịch'))
+        let can = duongLich % 10;
+         canNam = can.value;
+        let chi = duongLich % 12;
+        chiNam = chi.value
+        let canchi;
+        switch(can){
+            case 0:
+                canNam = "Canh"
+                document.write(`Can của năm ${duongLich} là : Canh <br>`);
+                break;
+            case 1:
+                canNam = "Tân"
+                document.write(`Can của năm ${duongLich} là : Tân  <br>`);
+            break;
+            case 2:
+                canNam = "Nhâm"
+                document.write(`Can của năm ${duongLich} là : Nhâm <br>`);
+            break;
+            case 3:
+                canNam = "Quý"
+                document.write(`Can của năm ${duongLich} là : Quý <br>`);
+            break;
+            case 4:
+                canNam = "Giáp"
+                document.write(`Can của năm ${duongLich} là : Giáp <br>`);
+            break;
+            case 5:
+                canNam = "Ất"
+                document.write(`Can của năm ${duongLich} là : Ất  <br>`);
+            break;
+            case 6:
+                canNam = "Bính"
+                document.write(`Can của năm ${duongLich} là : Bính <br>`);
+            break;
+            case 7:
+                canNam = "Đinh"
+                document.write(`Can của năm ${duongLich} là : Đinh <br>`);
+            break;
+            case 8:
+                canNam = "Mậu"
+                document.write(`Can của năm ${duongLich} là : Mậu <br>`);
+            break;
+            case 9:
+                canNam = "Kỳ"
+                document.write(`Can của năm ${duongLich} là : Kỳ <br>`);
+            break;
+        }
+        switch(chi){
+            case 0:
+                chiNam ="Thân"
+                document.write(`Chi của năm ${duongLich} là : Thân <br>`);
+            break;
+            case 1:
+                chiNam ="Dậu"
+                document.write(`Chi của năm ${duongLich} là : Dậu <br>`);
+            break;
+            case 2:
+                chiNam ="Tuất"
+                document.write(`Chi của năm ${duongLich} là : Tuất <br>`);
+            break;
+            case 3:
+                chiNam ="Hợi"
+                document.write(`Chi của năm ${duongLich} là : Hợi <br>`);
+            break;
+            case 4:
+                chiNam ="Tý"
+                document.write(`Chi của năm ${duongLich} là : Tý <br>`);
+            break;
+            case 5:
+                chiNam ="Sửu"
+                document.write(`Chi của năm ${duongLich} là : Sửu <br>`);
+            break;
+            case 6:
+                chiNam ="Dần"
+                document.write(`Chi của năm ${duongLich} là : Dần <br>`);
+            break;
+            case 7:
+                chiNam ="Mẹo"
+                document.write(`Chi của năm ${duongLich} là : Mẹo <br>`);
+            break;
+            case 8:
+                chiNam ="Thìn"
+                document.write(`Chi của năm ${duongLich} là : Thìn <br>`);
+            break;
+            case 9:
+                chiNam ="Tỵ"
+                document.write(`Chi của năm ${duongLich} là : Tỵ <br>`);
+            break;
+            case 10:
+                chiNam ="Ngọ"
+                document.write(`Chi của năm ${duongLich} là : Ngọ <br>`);
+            break;
+            case 11:
+                chiNam ="Mùi"
+                document.write(`Chi của năm ${duongLich} là : Mùi <br>`);
+            break;
+        }
+        canchi = canNam+" " + chiNam ;
+        console.log(canchi)
+        document.write(`Năm âm lịch ${duongLich} là : ${canchi}`)
+
+   </script>
+</body>
+</html>
