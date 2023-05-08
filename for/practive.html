@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Loops</h2>
+    <p id="demo"></p>
+    <script>
+      // bài 1
+      //   let num = prompt("Enter a number: ");
+      //   let total = 0;
+      //   while (num != -1) {
+      //     num = prompt("Enter a number: ");
+      //     alert(num)
+      //     total = total + num;
+
+      //     total += num;
+      //     alert(total)
+      //   }
+
+      //bài 2
+      //   let i = 1;
+
+      //   while (i < 100) {
+      //     // phân thân vòng lặp
+      //     document.write("<hr width = " + i + "%>");
+      //     i++;
+      //   }
+      //bài 3
+      //   let value = null;
+      //   do {
+      //     value = prompt("Nhập vào số từ 1 -> 10");
+      //   } while (value < 1 || value > 10);
+      //   alert("Số bạn vừa nhập là " + value);
+
+      //bài 4
+      //   let sout;
+      //   sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+      //   for (i = 1; i <= 10; i++) {
+      //     sout = sout + "<tr>";
+      //     for (j = 1; j <= 10; j++) {
+      //       sout = sout + "<td>" + i * j + "</td>";
+      //     }
+      //     sout = sout + "</tr>";
+      //   }
+      //   sout = sout + "</table>";
+      //   document.write(sout);
+
+      //   //   bài 5
+      //   let input;
+      //   do {
+      //     input = prompt("Nhap cau than chu");
+      //   } while (input !== PASSWORD);
+      //   alert("Mo cua thanh cong!");
+
+      // bài 6
+      // let text = "";
+      // let i;
+      // for (i = 0; i < 5; i++) {
+      //     text += "The number is " + i + "<br>";
+      // }
+      // document.getElementById("demo").innerHTML = text;
+
+      // bài 7
+      let num = prompt("Enter your number: ");
+      let total = 0;
+      let i = 1;
+      for (; i <= num; i += 1) {
+        total = total + i;
+        alert(total);
+      }
+    </script>
+  </body>
+</html>
